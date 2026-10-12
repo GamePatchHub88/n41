@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Intro section with dropdown navigation</title>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./images/logo.svg" alt="snap" class="logo" />
+
+      <nav class="nav" aria-label="Main">
+        <ul class="nav-list">
+          <!-- القائمة المنسدلة الأولى -->
+          <li class="has-dropdown">
+            <button
+              class="dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="menu-features"
+            >
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="" class="arrow" />
+            </button>
+            <ul class="dropdown" id="menu-features" hidden>
+              <li>
+                <a href="#"
+                  ><img src="./images/icon-todo.svg" alt="" />Todo List</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/icon-calendar.svg" alt="" />Calendar</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/icon-reminders.svg" alt="" />Reminders</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img src="./images/icon-planning.svg" alt="" />Planning</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- القائمة المنسدلة الثانية -->
+          <li class="has-dropdown">
+            <button
+              class="dropdown-toggle"
+              aria-expanded="false"
+              aria-controls="menu-company"
+            >
+              Company
+              <img src="./images/icon-arrow-down.svg" alt="" class="arrow" />
+            </button>
+            <ul class="dropdown" id="menu-company" hidden>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Our Team</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#" class="nav-link">Careers</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+        </ul>
+
+        <div class="auth">
+          <a href="#" class="nav-link">Login</a>
+          <a href="#" class="btn">Register</a>
+        </div>
+      </nav>
+    </header>
+
+    <div class="contianer">
+      <main class="hero">
+        <h1>Make remote work</h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes,
+          create team rituals, and watch productivity soar.
+        </p>
+        <a href="#" class="btn btn-large">Learn more</a>
+        <div class="imgs">
+          <img src="./images/client-databiz.svg" alt="" />
+          <img src="./images/client-audiophile.svg" alt="" />
+          <img src="./images/client-meet.svg" alt="" />
+          <img src="./images/client-maker.svg" alt="" />
+        </div>
+      </main>
+      <img src="./images/image-hero-desktop.png" class="des" alt="" />
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
